@@ -2,5 +2,29 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
+		int iterationNum = Integer.parseInt(args[0]);
+		double ans;
+		int countSmall = 0 ; 
+		int countBigger = 0 ;
+		for (int i = 0 ; i < iterationNum ; i++) {
+			ans = Math.random();
+			if(ans > 0.5) {
+				countBigger++;
+			} else countSmall++ ;
+
+		}
+		double ratio ; 
+		System.out.println("> 0.5:  " + countBigger + " times");
+		System.out.println("<= 0.5: " + countSmall + " times");
+		if (countBigger > 0 && countSmall > 0 ) {
+			if (countBigger > countSmall){
+				ratio = (double) countSmall / countBigger ;
+			} else ratio = (double) countBigger / countSmall ;
+			System.out.println("Ratio: " + ratio);
+
+		}
+		
+
+
 	}
 }
