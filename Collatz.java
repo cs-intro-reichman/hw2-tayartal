@@ -10,6 +10,7 @@ public class Collatz {
             int ans = i;
 			counter = 0 ;
             do { 
+				System.out.println(ans + " ");
                 if (ans % 2 != 0) {
                     ans = ans * 3 + 1;
                 } else {
