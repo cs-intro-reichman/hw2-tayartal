@@ -10,14 +10,14 @@ public class Collatz {
             int ans = i;
 			counter = 0 ;
             do { 
-				System.out.println(ans + " ");
+				System.out.print(ans + " ");
                 if (ans % 2 != 0) {
                     ans = ans * 3 + 1;
                 } else {
                     ans /= 2;
                 }
                 if (mode.equals("v")) {
-                    System.out.println(ans + " ");
+                    System.out.print(ans + " ");
                 }
                 counter++;
             } while (ans != 1); 
