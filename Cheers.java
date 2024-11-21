@@ -2,7 +2,8 @@
 public class Cheers {
         public static void main(String[] args) {
 	    // Replace this comment with your code
-                String word = args[0];
+                //String word = args[0];
+                String word = args[0].toUpperCase();
                 int numCheers = Integer.parseInt(args[1]);
 
                 for (int i = 0; i < word.length(); i++) {
