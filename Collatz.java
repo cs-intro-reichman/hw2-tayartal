@@ -10,7 +10,9 @@ public class Collatz {
             int ans = i;
 			counter = 1 ;
             do { 
-				System.out.print(ans + " ");
+				if (mode.equals("v")) {
+					System.out.print(ans + " ");
+				}
                 if (ans % 2 != 0) {
                     ans = ans * 3 + 1;
                 } else {
@@ -26,7 +28,7 @@ public class Collatz {
 				System.out.print("(" + counter +")\n");
 			}
 		}
-		System.out.println("Every one of the first " + seed + "hailstone sequences reached 1.");
+		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 
 	}
 }
