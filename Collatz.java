@@ -7,6 +7,7 @@ public class Collatz {
 		
 		for (int i = 1; i <= seed; i++) {
 			int ans = i;
+			counter = 1 ;
 			while (ans != 1) {
 				if (ans % 2 != 0 ) {
 					ans  = ans * 3 + 1;
