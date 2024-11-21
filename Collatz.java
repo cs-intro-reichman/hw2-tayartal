@@ -9,10 +9,11 @@ public class Collatz {
 		for (int i = 1; i <= seed; i++) {
             int ans = i;
 			counter = 1 ;
+			if (mode.equals("v")) {
+				System.out.print(ans + " ");
+			}
             do { 
-				if (mode.equals("v")) {
-					System.out.print(ans + " ");
-				}
+				
                 if (ans % 2 != 0) {
                     ans = ans * 3 + 1;
                 } else {
