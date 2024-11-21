@@ -8,7 +8,7 @@ public class Collatz {
 		
 		for (int i = 1; i <= seed; i++) {
             int ans = i;
-			counter = 0 ;
+			counter = 1 ;
             do { 
 				System.out.print(ans + " ");
                 if (ans % 2 != 0) {
