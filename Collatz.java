@@ -1,4 +1,5 @@
 // Demonstrates the Collatz conjecture.
+
 public class Collatz {
 	public static void main(String args[]) {
 	    int seed = Integer.parseInt(args[0]);
@@ -13,12 +14,13 @@ public class Collatz {
 					ans  = ans * 3 + 1;
 				} else ans /= 2; 
 				if(mode.equals("v")) {
-					System.out.println(ans + " ");
+					System.out.print(ans + " ");
 				}
 				counter ++; 
 			}
+
 			if(mode.equals("v")) {
-				System.out.println("(" + counter +")\n");
+				System.out.print("(" + counter +")\n");
 			}
 		}
 		System.out.println("Every one of the first " + seed + "hailstone sequences reached 1.");
